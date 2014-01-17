@@ -1,0 +1,24 @@
+<div class="off-canvas-wrap">
+	<div class="inner-wrap">
+		<nav class="tab-bar">
+			<section class="left-small">
+				<a class="left-off-canvas-toggle menu-icon"><span></span></a>
+			</section>
+			<section class="middle tab-bar-section">
+				<h1>{{selectedTag}}</h1>
+			</section>
+		</nav>
+		<aside class="left-off-canvas-menu">
+			<ul class="off-canvas-list">
+				<li><label>http://localhost:5984/</label></li>
+				{{#each tag in model}}
+				{{#link-to 'tag' tag tagName="li"}}<a {{bind-attr href=view.href}}>{{tag}}</a>{{/link-to}}
+				{{/each}}
+			</ul>
+		</aside>
+		{{outlet}}  
+
+		<a class="exit-off-canvas"></a>
+	</div>
+</div>
+

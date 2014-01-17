@@ -1,0 +1,25 @@
+{
+  "name": "veranda",
+  "version": "0.0.1",
+  "authors": [
+    "thriqon <github@jonasw.de>"
+  ],
+  "description": "Veranda Webmail",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://thriqon.github.io/veranda",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "foundation": "~5.0.3",
+    "ember": "~1.3.1",
+    "pouchdb-nightly.min": "http://download.pouchdb.com/pouchdb-nightly.min.js"
+  }
+}

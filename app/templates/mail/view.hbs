@@ -1,0 +1,34 @@
+<section class="main-section row">
+	<h2>{{subject}}</h2>
+	<table class="small-12 columns headerlist">
+		<tbody>
+		<tr><th>From</th><td>{{from}}</td></tr>
+		<tr><th>To</th><td>{{to}}</td></tr>
+		</tbody>
+	</table>
+	<div class="clearfix">
+		{{view Veranda.MagicSuggestView value=tags}}
+	</div>
+	<hr>
+	<ul class="csstabs">
+		<li>
+		<input type="radio" checked name="tabs" id="tab1">
+		<label for="tab1">text/plain</label>
+		<div id="tab-content1" class="tab-content animated fadeIn">
+			<div class="panel">
+				<pre>
+test
+				</pre>
+			</div>
+		</div>
+		</li>
+		<li>
+		<input type="radio" name="tabs" id="tab2">
+		<label for="tab2">text/html</label>
+		<div id="tab-content2" class="tab-content animated fadeIn">
+			<b>test</b>
+		</div>
+		</li>
+	</ul>
+</section>
+
