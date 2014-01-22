@@ -1,0 +1,92 @@
+@import "../bower_components/foundation/scss/foundation";
+
+.inner-wrap, .outer-wrap, body {
+  height: 100vh;
+}
+
+.maillist {
+  list-style-type: none;
+  margin: 0;
+}
+
+$maillist-entry-border-height: 0px;
+
+.maillistentry {
+  display: block;
+  border: $maillist-entry-border-height solid grey;
+  position: relative;
+  margin-top: -$maillist-entry-border-height;
+  padding: 0.5em;
+  background-color: #eeeeee;
+  margin-bottom: 2px;
+  .labelbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    .label {
+      margin-left: 0.2em;
+    }
+  }
+}
+
+.csstabs {
+  width: 100%;
+  float: none;
+  list-style: none;
+  position: relative;
+  padding: 0;
+  input[type=radio] {
+    position: absolute;
+    top: -9999rem;
+    left: -9999rem;
+  }
+  li {
+    float: left;
+  }
+  label {
+    display: block;
+    padding: 0.7em 1.2em;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+  }
+}
+
+[id^=tab]:checked + label {
+  background: #0088cc;
+  color: white;
+  top: 0;
+}
+
+[id^=tab]:checked ~ [id^=tab-content] {
+  display: block;
+}
+
+.tab-content {
+  width: 100%;
+  display: none;
+  padding-top: 0.8em;
+  padding: 1em;
+  position: absolute;
+  top: 3em;
+  left: 0;
+}
+
+.headerlist th {
+  text-align: right;
+}
+
+.messagedetailview {
+  @extend .row;
+  .messageheader {
+    position: relative;
+    .messageactionbuttons {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      a {
+        display: inline-block;
+      }
+    }
+  }
+}

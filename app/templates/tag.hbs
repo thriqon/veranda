@@ -2,9 +2,11 @@
 	{{#each}}
 	{{#link-to 'mail.view' this.value._id}}
 	<div class="maillistentry clearfix">
-		{{#each this.value.tags}}
-		<div class="tiny label">{{this}}</div>
-		{{/each}}
+		<div class="labelbox">
+			{{#each this.value.tags}}
+			<div class="tiny label">{{this}}</div>
+			{{/each}}
+		</div>
 		<div class="small-12 large-4 columns push-4">{{this.value.subject}}</div>
 		<div class="small-6 large-4 columns pull-4">{{this.value.from}}</div>
 		<div class="small-6 large-4 columns">{{this.value.date}}</div>

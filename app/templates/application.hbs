@@ -1,24 +1,48 @@
 <div class="off-canvas-wrap">
 	<div class="inner-wrap">
-		<nav class="tab-bar">
-			<section class="left-small">
+		<nav class="tab-bar hide-for-large-up">
+			<section class="hide-for-large left-small">
 				<a class="left-off-canvas-toggle menu-icon"><span></span></a>
 			</section>
 			<section class="middle tab-bar-section">
 				<h1>{{selectedTag}}</h1>
 			</section>
 		</nav>
-		<aside class="left-off-canvas-menu">
+		<nav class="top-bar show-for-large-up" data-topbar>
+			<ul class="title-area">
+				<li class="name">
+					<h1><a href="#">Veranda</a></h1>
+				</li>
+			</ul>
+		</nav>
+
+		<aside class="left-off-canvas-menu hide-for-large-up">
 			<ul class="off-canvas-list">
+				<li><h2>VERANDA</h2></li>
 				<li><label>http://localhost:5984/</label></li>
 				{{#each tag in model}}
 				{{#link-to 'tag' tag tagName="li"}}<a {{bind-attr href=view.href}}>{{tag}}</a>{{/link-to}}
 				{{/each}}
+				<li><label>Settings</label></li>
+				<li><a href="#"><i class="fa fa-sitemap"></i> Servers</a></li>
 			</ul>
 		</aside>
-		{{outlet}}  
 
-		<a class="exit-off-canvas"></a>
+		<div class="large-3 columns show-for-large-up">
+			<ul class="side-nav">
+				<li><label>http://localhost:5984/</label></li>
+				{{#each tag in model}}
+				{{#link-to 'tag' tag tagName="li"}}<a {{bind-attr href=view.href}}>{{tag}}</a>{{/link-to}}
+				{{/each}}
+				<li><label>Settings</label></li>
+				<li><a href="#"><i class="fa fa-sitemap"></i> Servers</a></li>
+			</ul>
+		</div>
+		<div class="large-9 small-12 columns">
+			{{outlet}}  
+		</div>
+
+		<a class="hide-for-large-up exit-off-canvas"></a>
 	</div>
 </div>
 

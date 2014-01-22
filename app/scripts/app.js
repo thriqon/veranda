@@ -1,4 +1,5 @@
-var Veranda = window.Veranda = Ember.Application.create();
+var Veranda = window.Veranda = Ember.Application.create({
+});
 
 /* Order and include as you please. */
 require('scripts/store');

@@ -1,7 +1,7 @@
 {
-	"name": "veranda",
-	"version": "0.0.1",
-	"description": "Veranda Webmail",
+  "name": "veranda",
+  "version": "0.0.1",
+  "description": "Veranda Webmail",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -9,7 +9,7 @@
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-coffee": "~0.7.0",
     "grunt-contrib-uglify": "~0.2.0",
-		"grunt-contrib-compass": "~0.5.0",
+    "grunt-contrib-compass": "~0.5.0",
     "grunt-contrib-jshint": "~0.6.3",
     "grunt-contrib-cssmin": "~0.6.0",
     "grunt-contrib-connect": "~0.3.0",
@@ -29,17 +29,26 @@
     "time-grunt": "~0.1.1",
     "grunt-replace": "~0.4.4",
     "jshint-stylish": "~0.1.3",
-    "grunt-neuter": "~0.5.0"
+    "grunt-neuter": "~0.5.0",
+    "gulp-rename": "~0.2.2",
+    "gulp-uglify": "~0.1.0",
+    "gulp-concat": "~2.1.7",
+    "gulp-jshint": "~1.3.4",
+    "gulp": "~3.3.4",
+    "gulp-sass": "~0.4.0",
+    "gulp-livereload": "~0.2.0",
+    "gulp-minify-css": "~0.2.0",
+    "gulp-ember-handlebars": "~0.2.0",
+    "gulp-browserify": "~0.3.3"
   },
-	"repository": {
-		"type": "git",
-		"url": "http://github.com/thriqon/veranda.git"
-	},  
-	"author": "Jonas 'thriqon' Weber",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/thriqon/veranda/issues"
-	},  
-	"homepage": "https://thriqon.github.com/veranda"
-
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/thriqon/veranda.git"
+  },
+  "author": "Jonas 'thriqon' Weber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thriqon/veranda/issues"
+  },
+  "homepage": "https://thriqon.github.com/veranda"
 }
